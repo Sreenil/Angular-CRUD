@@ -1,0 +1,20 @@
+<h3>List of All Tasks</h3>
+<div class="listtask">
+<table>
+    <thead>
+        <tr>
+        <th>Task</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let task of abc; let i =index">
+        <td>{{task.taskname}}</td>
+        <td>{{task.description}}</td>
+        <td><button type="submit" (click)="delete(i)">Delete</button></td>
+        <td><button type="submit" (click)="update(i)">Update</button></td>
+    </tr>
+    
+</tbody>
+</table>
+</div>
